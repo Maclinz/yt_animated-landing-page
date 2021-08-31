@@ -4,6 +4,8 @@ import { InnerLayout } from '../styles/Layouts';
 import ChartStats from './ChartStats';
 import chart from '../img/chart.svg';
 import AnimatedButton from './AnimatedButton';
+import { Bounce, Roll } from 'react-reveal';
+import RubberBand from 'react-reveal/RubberBand';
 
 function ChartSection() {
     return (
@@ -23,11 +25,15 @@ function ChartSection() {
                         <h2 className="secondary-heading">
                             Manage your finances like a pro in no time 
                         </h2>
+                        <Roll right>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia nemo distinctio dolores necessitatibus odit magni corrupti error, 
                             voluptate alias adipisci ducimus nostrum maiores. Ad?
                         </p>
-                        <AnimatedButton name={'Learn More'} />
+                        </Roll>
+                        <Bounce right>
+                            <AnimatedButton name={'Learn More'} />
+                        </Bounce>
                     </div>
                 </div>
             </InnerLayout>

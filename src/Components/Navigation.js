@@ -2,9 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import PrimaryButton from './PrimaryButton';
 import logo from '../img/logo.svg';
+import { Fade } from 'react-reveal';
 
 function Navigation() {
     return (
+        <Fade top>
         <NavigationStyled>
             <div className="logo">
                 <img src={logo} alt="" />
@@ -22,6 +24,7 @@ function Navigation() {
             </ul>
             <PrimaryButton name={'Sign Up'} />
         </NavigationStyled>
+        </Fade>
     )
 }
 
