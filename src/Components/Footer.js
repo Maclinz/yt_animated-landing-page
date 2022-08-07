@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { InnerLayout } from '../styles/Layouts';
-import logo from '../img/logo.svg';
+import logo from '../img/urbanfitnewlogo (1).png';
 
 function Footer() {
     return (
@@ -12,7 +12,7 @@ function Footer() {
                        <div className="logo-items">
                         <img src={logo} alt="" />
                             <p>
-                                Copyright @2021 LoremIpsum. <br />
+                                Copyright @2021 Urbanfit. <br />
                                 All rights reserved.
                             </p>
                        </div>
@@ -20,13 +20,16 @@ function Footer() {
                     <ul className="botton-nav">
                         <div className="links1">
                             <li>
-                                <a href="#">Team</a>
+                                <a href="#">About Us</a>
                             </li>
                             <li>
-                                <a href="#">Press</a>
+                                <a href="#">Blog</a>
                             </li>
                             <li>
-                                <a href="#">Fees</a>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
                             </li>
                         </div>
                         <div className="links2">
@@ -60,7 +63,7 @@ function Footer() {
 
 const FooterStyled = styled.footer`
     padding: 0 18rem;
-    background-color: #DCE2F0;
+    background-color: #99ef11;
     @media screen and (max-width: 1347px){
         padding: 5rem 14rem;
     }
@@ -87,7 +90,6 @@ const FooterStyled = styled.footer`
         display: flex;
         justify-content: space-between;
         li{
-            padding: 2rem 0;
             color: #16194F;
         }
     }

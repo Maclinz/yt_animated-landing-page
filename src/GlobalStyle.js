@@ -3,11 +3,11 @@ import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     :root{
-        --purple-primary: #554DDE;
+        --purple-primary: #99ff33;
         --accent-pink: #F44E77;
-        --neutral-light: #F2F6FF;
+        --neutral-light: #223359;
         --lavender-secondary: #6A6D9E; /*Primary Font Color*/
-        --dark-primary: #16194F;
+        --dark-primary: #99ff33;
         --border-colour: #CAD6F1;
         
     }
