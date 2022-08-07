@@ -16,8 +16,8 @@ function PaymentSection() {
                 <p className="c-para">Start with our free plan and switch to premium as you grow. </p>
                 <div className="card-con">
                     <Card 
-                    account={'Free'}
-                    amount={'$0'}
+                    account={'UrbanFit GOLD'}
+                    amount={'$30'}
                     text={'Manage your business with a simple and efficient account.'}
                     button={'Get Started'}
                     card={card}
@@ -25,9 +25,9 @@ function PaymentSection() {
                     inactive={inactive}
                     check={check}
                     checkDis={checkDisabled}
-                    text1={'10 free local transfers'}
-                    text2={'Free ATM withdrawals in Dollar up to $250 per month'}
-                    text3={'Free payments to other Draft accounts'}
+                    text1={'Exclusive Discount'}
+                    text2={'Priority Delivery'}
+                    text3={'Early Access'}
                     text4={'Prepaid debit cards'}
                     text5={'Virtual cards'}
                     text6={'Priority 24/7 support'}
@@ -36,8 +36,8 @@ function PaymentSection() {
                     />
                     
                     <Card 
-                    account={'Premium'}
-                    amount={'$10'}
+                    account={'UrbanFit PREMIUM'}
+                    amount={'$50'}
                     text={'Manage your business with a simple and efficient account.'}
                     button={'Get Started'}
                     card={card}
@@ -45,10 +45,10 @@ function PaymentSection() {
                     inactive={inactive}
                     check={check}
                     checkDis={checkDisabled}
-                    text1={'10 free local transfers'}
-                    text2={'Free ATM withdrawals in Dollar up to $250 per month'}
-                    text3={'Free payments to other Draft accounts'}
-                    text4={'Prepaid debit cards'}
+                    text1={'Exclusive Discount'}
+                    text2={'Priority Delivery'}
+                    text3={'Early Accesss'}
+                    text4={'Get your order delivered early with Urbanfit gold'}
                     text5={'Virtual cards'}
                     text6={'Priority 24/7 support'}
                     text7={'Exchange 24 currencies'}
@@ -74,4 +74,5 @@ const PaymentStyled = styled.section`
         text-align: center;
     }
 `;
+
 export default PaymentSection;

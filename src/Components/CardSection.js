@@ -1,50 +1,56 @@
-import React from 'react';
-import styled from 'styled-components';
-import { InnerLayout } from '../styles/Layouts';
-import card from '../img/creditcard.svg';
+import React from "react";
+import styled from "styled-components";
+import { InnerLayout } from "../styles/Layouts";
+import Stats from "./Stats";
 
 function CardSection() {
-    return (
-        <CardSectionStyled>
-            <InnerLayout>
-                <div className="card-container">
-                    <div className="card-left">
-                        <h2 className="secondary-heading">
-                            One card for all your payments
-                        </h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit doloremque quia? Odit illo, tempore quod vero exercitationem, 
-                            voluptatum laudantium quo harum, adipisci tenetur eum.
-                        </p>
-                    </div>
-                    <div className="card-right">
-                        <img src={card} alt="" />
-                    </div>
-                </div>
-            </InnerLayout>
-        </CardSectionStyled>
-    )
+  return (
+    <CardSectionStyled>
+      <h1 className=" choose secondary-heading">Why UrbanFit</h1>
+      <p>
+        Owning a franchise not only will give you the opportunity to take charge
+        of your own successful business but also allows you to be a part of the
+        movement in the business of health supplements. If you are accepted as a
+        UrbanFit Franchise owner, you will be a partner of India’s fastest
+        growing fitness tech brand and the most trustworthy name in the industry
+      </p>
+      <InnerLayout>
+        <div className="card-container">
+          <div className="card-left">
+            <Stats name={'Number of Client Per Month'} svg={<i class="icofont-numbered"></i>}/>
+            <Stats name={'Number of Store'} svg={<i class="icofont-shopify"></i>}/>
+            <Stats name={'Revenue Generated Per Store'} svg={<i class="icofont-money-bag"></i>}/>
+          </div>
+        </div>
+      </InnerLayout>
+    </CardSectionStyled>
+  );
 }
 
 const CardSectionStyled = styled.section`
-    .card-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        @media screen and (max-width: 845px){
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .card-right{
-            display: flex;
-            justify-content: flex-end;
-            img{filter: drop-shadow(0px 50px 100px rgba(22, 25, 79, 0.15));}
-        }
+  .choose {
+    display: flex;
+    justify-content: center;
+  }
+  .card-container {
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    @media screen and (max-width: 845px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    }
 
-        .card-left{
-            p{
-                padding: 1rem 0;
-            }
-        }
+    .card-left {
+      display: flex;
+      justify-content: center;
+      gap:50px;
+      p {
+        padding: 1rem 1;
+      }
     }
 `;
 
-export default CardSection
+export default CardSection;
+
+
+

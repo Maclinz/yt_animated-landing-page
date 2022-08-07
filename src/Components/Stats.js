@@ -3,7 +3,7 @@ import "../img/css/icofont.min.css";
 import styled, {css} from "styled-components";
 
 
-function ChartStats({ name, svg}) {
+function ChartStats({ name,svg}) {
   return (
     <div>
         <Card>
@@ -58,8 +58,12 @@ export const PlanTitle = styled.div`
 font-size: 1.25rem;
 align-items: center;
 justify-content: center;
-padding: 20px;
+padding: 10px;
+font-size: 21px;
+font-weight: 500;
+font-style: oblique;
 color:  #99ff33;
+
 `;
 export const PlanCost = styled.div`
 font-size: 3rem;

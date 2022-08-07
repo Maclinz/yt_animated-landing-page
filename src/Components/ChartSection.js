@@ -1,79 +1,70 @@
-import React from 'react';
-import styled from 'styled-components';
-import { InnerLayout } from '../styles/Layouts';
-import ChartStats from './ChartStats';
-import chart from '../img/chart.svg';
-import AnimatedButton from './AnimatedButton';
-import { Bounce, Roll } from 'react-reveal';
-import RubberBand from 'react-reveal/RubberBand';
+import React from "react";
+import styled from "styled-components";
+import { InnerLayout } from "../styles/Layouts";
+import ChartStats from "./ChartStats";
 
 function ChartSection() {
-    return (
-        <ChartStyled >
-            <InnerLayout>
-                <div className="chart-con">
-                    <div className="chart-left">
-                        <div className="stats">
-                            <div className="stats-money">
-                                <ChartStats name={'Balance'} amount={'$250'} />
-                                <ChartStats name={'Last Transaction'} amount={'$1,000'} />
-                            </div>
-                            <img src={chart} alt="" />
-                        </div>
-                    </div>
-                    <div className="chart-right">
-                        <h2 className="secondary-heading">
-                            Manage your finances like a pro in no time 
-                        </h2>
-                        <Roll right>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia nemo distinctio dolores necessitatibus odit magni corrupti error, 
-                            voluptate alias adipisci ducimus nostrum maiores. Ad?
-                        </p>
-                        </Roll>
-                        <Bounce right>
-                            <AnimatedButton name={'Learn More'} />
-                        </Bounce>
-                    </div>
-                </div>
-            </InnerLayout>
-        </ChartStyled >
-    )
+  return (
+    <ChartStyled>
+      <h1 className=" choose secondary-heading">Urbanfit Franchies Vision</h1>
+      <InnerLayout>
+        <div className="chart-con">
+          <div className="chart-left">
+            <div className="stats">
+              <div className="stats-money">
+                <ChartStats
+                  name={
+                    "We aim to bring the change in fitness industry by establishing network of state of the art health supplement storess"
+                  }
+                  svg={<i class="icofont-chart-bar-graph"></i>}
+                />
+                <ChartStats
+                  name={
+                    "There is no possibility of fake products with UrbanFit due to our vast tie network of premium supplement brands"
+                  }
+                  svg={<i class="icofont-handshake-deal"></i>}
+                />
+                <ChartStats
+                  name={
+                    "Our priority will always be our customer. We aim to build trust, happiness and loyalty for our customers relation"
+                  }
+                  svg={<i class="icofont-ui-social-link"></i>}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </InnerLayout>
+    </ChartStyled>
+  );
 }
 
 const ChartStyled = styled.section`
-    .chart-con{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        @media screen and (max-width: 1347px){
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .chart-left{
-            width: 80%;
-            @media screen and (max-width: 1347px){
-                width: 100%;
-            }
-            .stats{
-                img{
-                    box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
-                    border-radius: 62px;
-                    width: 100%;
-                }
-                .stats-money{
-                    display: flex;
-                    padding-bottom: 1.3rem;
-                    justify-content: space-between;
-                }
-            }
-        }
-
-        .chart-right{
-            padding-left: 2rem;
-            p{
-                padding: 1.3rem 0;
-            }
-        }
+  .choose {
+    display: flex;
+    justify-content: center;
+  }
+  .chart-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width: 1347px) {
+      grid-template-columns: repeat(1, 1fr);
     }
+    .chart-left {
+      width: 80%;
+      @media screen and (max-width: 1347px) {
+        width: 100%;
+      }
+      .stats {
+        .stats-money {
+          display: flex;
+          gap: 50px;
+          padding-bottom: 1.3rem;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
 `;
 
-export default ChartSection
+export default ChartSection;
